@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #DDDDDD;
+            background: linear-gradient(0deg, #DDD, #fff);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            margin: 2rem;
+            color: #06113C;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        .card {
+            border: none;
+            transition: all 0.5s;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px #06113C;
+            margin: 0 10px;
+        }
+
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes lighted {
+            50% {
+                box-shadow: -2px -2px 10px 2px rgba(255, 255, 255, 0.5), 2px 2px 10px 5px #06113C;
+            }
+        }
+
+        .card .card-title {
+            text-transform: uppercase;
+        }
+
+        .card .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card .card-body {
+            background-color: #06113C;
+            color: #fff;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .card a {
+            background-color: #FF8C32;
+            border: none;
+        }
+
+        .card a:hover {
+            background-color: #e0792a;
+        }
+
+        .card#nsrithon {
+            box-shadow: 0 0 10px 2px #FF8C32;
+
+        }
+
+        .card#nsrithon .card-body {
+            background-color: #FF8C32;
+            color: #000;
+        }
+
+        .card#nsrithon a:hover {
+            background-color: #16245b;
+        }
+
+        .card#nsrithon a {
+            background-color: #06113C;
+        }
+
+        h1 {
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 900px) {
+            .card {
+                margin-bottom: 2rem;
+            }
+
+            .col-sm {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Visit Our Resume</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/cchantaw-thumbnail.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">cchantaw</h5>
+                            <p class="card-text">If my passion isn't enough, my skills is.</p>
+                            <a href="/chamel/chamel.html" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" id="nsrithon" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/nsrithon-thumbnail2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">nsrithon</h5>
+                            <p class="card-text">
+                                What we think,
+                                <br>we become.
+                            </p>
+                            <a href="/nsrithon/about.html" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="links">
+
+
+        </div>
+    </div>
+</body>
+
+</html>
